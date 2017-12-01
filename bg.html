@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Automatic change to webpage background image </title>
+   
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+ Note you can download the JQuery package instead of using Google version. -->
+<script src="jquery-1.8.3.js"></script>
+  <script>
+            $(document).ready(function(){
+      
+    var numberOfImages=3;
+      
+    var imageNum = Math.round(Math.random()*(numberOfImages-1))+1;
+      
+    var imgPath=('background'+imageNum+'.jpg');
+    
+    $('list').css('body', ('url("baclground'+imgPath+'.jpg")'));
+      
+    });
+  </script>
+  
+</head>
+<body>
+    <b> Page background image is changed randomly for every page view. </b>
+ 
+</body>
+  
+</html>
+- See more at: http://www.codemiles.com/jquery-examples/automatic-change-to-webpage-background-image-t10753.html#sthash.yPt2Peln.dpuf
